@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IA Agentiva — Proyecto Beta</title>
+<style>
+:root{--bg:#07111f;--card:#0d1b2e;--text:#e8f0fb;--muted:#9db0c7;--accent:#61dafb;--line:#20334d}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#07111f,#10243b);color:var(--text);font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:1180px;margin:auto;padding:32px 20px 70px}.hero{padding:52px 10px 36px}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem}
+h1{font-size:clamp(2.4rem,6vw,5rem);line-height:1.02;margin:12px 0}h2{margin-top:0}p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}.card{background:rgba(13,27,46,.9);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 10px 30px #0003}.wide{margin-top:18px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.btn{display:inline-block;padding:12px 17px;border-radius:12px;background:#122c46;color:var(--text);text-decoration:none;border:1px solid #31506d}.btn.primary{background:var(--accent);color:#04101b;border-color:var(--accent);font-weight:800}
+table{width:100%;border-collapse:collapse;font-size:.92rem}th,td{text-align:left;padding:11px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--accent)}
+.tag{display:inline-block;padding:4px 9px;border-radius:99px;background:#17304a;color:#b8d7ef;margin:3px}
+footer{margin-top:40px;color:var(--muted);font-size:.9rem}
+</style></head>
+<body><main>
+<section class="hero"><div class="eyebrow">Proyecto Beta · 29 septiembre 2026</div>
+<h1>Inteligencia<br>Artificial Agentiva</h1>
+<p>Investigación práctica sobre agentes, herramientas, memoria, planificación, multiagente, seguridad y ecosistema open source.</p>
+<div class="btns">
+<a class="btn primary" href="investigacion_ia_agentiva.md" download>Descargar investigación MD</a>
+<a class="btn" href="informe_ia_agentiva.docx" download>Descargar informe DOCX</a>
+<a class="btn" href="comparativa_ia_agentiva.xlsx" download>Descargar comparativa XLSX</a>
+</div></section>
+<section class="grid">
+<div class="card"><h2>¿Qué es?</h2><p>Un sistema que puede observar contexto, decidir, usar herramientas, ejecutar acciones, evaluar resultados y repetir el ciclo hacia un objetivo.</p></div>
+<div class="card"><h2>Arquitectura</h2><p>Modelo + objetivo + estado + memoria + herramientas + runtime + evaluación + guardrails.</p></div>
+<div class="card"><h2>Seguridad</h2><p>Prompt injection, abuso de herramientas, privilegios excesivos, exfiltración, memoria contaminada y falta de trazabilidad.</p></div>
+<div class="card"><h2>Open source</h2><p>Frameworks como LangGraph, CrewAI, Agent Framework, Dify, LlamaIndex, Haystack, OpenHands y Browser Use.</p></div>
+</section>
+<section class="card wide"><h2>El ciclo agentivo</h2><p><span class="tag">Objetivo</span> → <span class="tag">Observar</span> → <span class="tag">Interpretar</span> → <span class="tag">Planear</span> → <span class="tag">Validar</span> → <span class="tag">Ejecutar</span> → <span class="tag">Evaluar</span> → repetir o terminar.</p></section>
+<section class="card wide"><h2>Comparativa rápida</h2>
+<table><thead><tr><th>Framework / plataforma</th><th>Enfoque</th><th>Modelo de costo</th></tr></thead><tbody>
+<tr><td>OpenAI Agents SDK</td><td>Code-first, tools, handoffs, guardrails</td><td>SDK; inferencia según proveedor</td></tr>
+<tr><td>Microsoft Agent Framework</td><td>Agentes + workflows + memoria</td><td>Open source; infraestructura/modelo aparte</td></tr>
+<tr><td>LangGraph</td><td>Orquestación stateful y control de ciclos</td><td>Open source/self-hostable</td></tr>
+<tr><td>CrewAI</td><td>Equipos de agentes y tareas</td><td>Open source; servicios opcionales</td></tr>
+<tr><td>Google ADK</td><td>Agentes y sistemas multiagente</td><td>Framework; modelo/proveedor aparte</td></tr>
+<tr><td>AutoGen</td><td>Multiagente</td><td>Open source; maintenance mode</td></tr>
+<tr><td>Dify / Flowise</td><td>Constructor visual y workflows</td><td>Open source/self-hosted</td></tr>
+<tr><td>OpenHands</td><td>Agentes para desarrollo de software</td><td>Open source; modelo/infra aparte</td></tr>
+<tr><td>Browser Use</td><td>Agentes que controlan navegador</td><td>Open source; cloud opcional</td></tr>
+</tbody></table></section>
+<section class="card wide"><h2>Fuentes</h2><p>NIST · OpenAI · Microsoft · Anthropic · OWASP · repositorios oficiales de los frameworks analizados. Consulta la investigación completa para las referencias.</p></section>
+<footer>Proyecto_beta · investigación informativa · los precios, cuotas y condiciones de servicios pueden cambiar.</footer>
+</main></body></html>
